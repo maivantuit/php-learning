@@ -1,0 +1,84 @@
+<?php
+
+class DAO {
+    private $con;
+    function _construct($user,$pass,$db){
+        $host =$_SERVER['SERVER_NAME'];
+        $this->con=mysqli_conect($host,$user,$pass,$db);
+        
+    }
+    public function query($sql){
+        mysqli_query($this->con,"set names 'utf8'");
+        $rs = mysqli_query($this->con, $sql);
+        return $rs;
+    }
+    function table1($sql,$header){
+        $rs= $this->query($sql);
+        /*truy xuất các fields name
+         * $fieldinfo là mảng các object chứa thông tin
+         * về các fields đã select *
+         */
+        $fieldinfo=mysqli_fetch_fields($rs);
+        // tạo tiêu đề table
+        $str="<table><tr>";
+        foreach($fieldinfo as $val){
+            $name=$val->name;
+            $str.="<th>".$name."</th>";
+            
+        }
+        $str.="</tr>";
+        $counter=mysqli_num_rows($rs);
+        $tongTien=0;
+        //đưa dữ liệu trong recordset vào table
+        while ($r=mysqli_fetch_array($rs)) {
+            $str.="<tr>";
+            foreach ($fieldinfo as $val){
+                $name=$val->name;
+                $str.="<td>".$r[$name]."</td>";
+            }
+            $tongTien += $r['amount'];
+            $str.="</tr>";
+        }
+        $str.="</table>";
+        echo '<h3>{header}</h3>';
+        echo $str;
+        echo "<b> Tổng số mặt hàng:</b> $counter<br>";
+        echo "<b> Tổng tiền:</b> $tongSoLuong<br>";
+    }
+    function table2($sql,$header){
+        $rs= $this->query($sql);
+         /*truy xuất các fields name
+         * $fieldinfo là mảng các object chứa thông tin
+         * về các fields đã select *
+         */
+        
+        $fieldinfo=mysql_fetch_fields($rs);
+         // tạo tiêu đề table
+        $str="<table><tr>";
+         foreach($fieldinfo as $val){
+            $name=$val->name;
+            $str.="<th>".$name."</th>";
+            
+        }
+        $str.="</tr>";
+        $counter=mysqli_num_rows($rs);
+        $tongSoLuong=0;
+        //đưa dữ liệu trong recordset vào table
+         while ($r=mysqli_fetch_array($rs)) {
+            $str.="<tr>";
+            foreach ($fieldinfo as $val){
+                $name=$val->name;
+                $str.="<td>".$r[$name]."</td>";
+            }
+            $tongSoLuong += $r['qty'];
+            $str.="</tr>";
+        }
+        $str.="</table>";
+        echo '<h3>{header}</h3>';
+        echo $str;
+        echo "<b> Tổng số lượt bán:</b> $counter<br>";
+        echo "<b> Tổng tiền:</b> $tongSoLuong<br>";
+    }
+        
+}
+?>

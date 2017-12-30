@@ -1,0 +1,194 @@
+/* CSS Document */
+
+*{
+padiing:0px;
+margin:0px;
+text-family:arial;
+
+}
+body{
+font-size:small;
+/*background-image:url(anh/hinh00.png);*/
+background-color:#999999;
+
+}
+#phanbaoquanh{
+background-color:#FFFFFF;
+height:1000px; /* thay doi khi thay doi no dung web*/
+width:1100px;
+margin:auto;
+
+}
+#phantrencung{
+width:1100px;
+height:70px;
+background-color:#999999;
+/*background-image:url(anh/hinh00.png);*/
+margin:auto;
+
+
+}
+#phantrencung-trai{
+float: left;
+}
+#phantrencung-trai ul{
+list-style-type:none;
+padding:10px 0px 10px 30px;
+
+}
+#phantrencung-trai ul li{
+float:left;
+margin-right:10px;
+}
+#phantrencung-phai {
+float:right;
+color:#ffffff;
+margin-right:10px;
+
+}
+#phantrencung-phai .dangnhap{
+position:relative; 
+top:6px;	
+}
+#phantrencung-phai .dangkithanhvien{
+float:right;
+margin-top:10px;
+}
+#phandau{
+width:1100px;
+height:140px;
+/* background-image:url(anh/hinh00.png);xí n?a ch?nh s?a l?i background-image them mau cho no*/
+background-color:#CCCCCC;
+margin:auto;
+
+}
+#phandau #logo{
+width:250px;
+height:140px;
+float:left;
+margin-left:70px;
+
+
+}
+#phandau #dongchunho{
+height:38px;
+width:600px;
+float:right;
+
+
+}
+#phandau #dongchunho ul li{
+list-style-type:none;
+float:left;
+width:140px;
+font-size:16px;
+margin-top:15px;
+
+}
+#phandau #dongchunho ul li a{
+color:#000000;
+text-decoration:none;
+}
+#phandau #dongchunho ul li a:hover{
+color:#FF6600;
+text-decoration:underline;
+}
+#phandau #timkiem{
+width:600px;
+height:100px;
+float:right;
+
+}
+#phandau #timkiem form{
+margin:50px 0px 0px 200px;
+}
+#phandau #timkiem .timkiem1{
+width:270px;
+
+}
+#phandau #timkiem .timkiem2{
+float:right;
+position:relative;
+bottom:3px;
+right:10px;
+}
+#dangkithanhvien{
+height:600px;
+width:1100px;
+border:1px #FF00CC solid;
+clear:both;
+}
+#phanchan{
+
+height:300px;
+width:1100px;
+float:right;
+background-color:#999999;
+}
+#phanchan #phanchantren{
+height:200px;
+width:1100px;
+
+background-color:#CCCCCC;
+}
+#phanchan #phanchantren .logo2{
+float:left;
+
+margin:30px;
+
+}
+#phanchan #phanchantren .gioithieuthongtin{ 
+
+width:750px;
+height:200px;
+float:right;
+}
+
+#phanchan #phanchantren .gioithieuthongtin p{
+font-size:25px;
+text-align:center;
+text-decoration:none;
+
+
+
+}
+#phanchan #phanchantren .gioithieuthongtin a{
+text-decoration:none;
+color:#000000;
+margin-left:15px;
+font-size:15px;
+
+
+}
+#phanchan #phanchantren .gioithieuthongtin a:hover{
+color:#FF0000;
+text-decoration:underline;
+
+
+}
+#phanchan #phanchantren .gioithieuthongtin .gioithieuthongtin1{
+margin-left:50px;
+}
+#phanchanduoi{
+
+height:35px;
+width:900px;
+margin-top: 40px;
+margin-left: 70px;
+
+}
+#phanchan #phanchanduoi .phanchanduoi1{
+font-size:20px;
+color:#CCCCCC;
+margin-left:10px;
+}
+#phanchan #phanchanduoi .phanchanduoi2 a{
+margin-left:10px;
+color:#000000;
+text-decoration:none;
+font-size:20px;
+}
+#phanchan #phanchanduoi .phanchanduoi2 a:hover{
+color:#3300FF;
+text-decoration:underline;
+}

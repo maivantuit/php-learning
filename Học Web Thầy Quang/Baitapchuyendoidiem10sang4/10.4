@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+       
+    </head>
+  
+
+    <body>
+        <form method="post" action="proccess.php" name="main-form">
+            <table>
+                <tr>
+                    <td><p>Họ Tên</p></td>
+                    <td><p><input type="text" name="hoten" value="" placeholder="Mời nhập họ tên"></p></td>
+                </tr>
+                <tr>
+                    <td><p><span id="txtHint"></span>Mã sinh viên</p></td>
+                    <td><p><input onkeyup="showHint(this.value)" type="text" name="masinhvien" value="" placeholder="Mời nhập mã sinh viên"></p></td>
+                </tr>
+                <tr>
+                    <td><p>Môn học</p></td>
+                    <td><p><input type="text" name="monhoc" value="" placeholder="Mời nhập môn học"></p></td>
+                </tr>
+                <tr>
+                    <td><p>Thang điểm 10</p></td>
+                    <td><p><input type="text" name="thangdiem" value="" placeholder="Mời nhập thang điểm"></p></td>
+                <tr>
+                    <td colspan="2" align="center"> <input style="background: chocolate"  type="submit" name="btn_submit" value="Chuyển đổi"></td>
+                </tr>
+                </tr>
+            </table>
+        </form>
+        <?php
+            
+            
+        ?>
+    </body>
+</html>

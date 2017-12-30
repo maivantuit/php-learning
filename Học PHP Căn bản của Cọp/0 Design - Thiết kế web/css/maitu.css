@@ -1,0 +1,415 @@
+/* CSS Document */
+*{
+padiing:0px;
+margin:0px;
+text-family:arial;
+
+}
+body{
+font-size:small;
+/*background-image:url(anh/hinh00.png);*/
+background-color:#999999;
+
+}
+#phanbaoquanh{
+background-color:#FFFFFF;
+height:4000px; /* thay doi khi thay doi no dung web*/
+width:1100px;
+margin:auto;
+
+}
+#phantrencung{
+width:1100px;
+height:70px;
+background-color:#999999;
+/*background-image:url(anh/hinh00.png);*/
+margin:auto;
+
+
+}
+#phantrencung-trai{
+float: left;
+}
+#phantrencung-trai ul{
+list-style-type:none;
+padding:10px 0px 10px 30px;
+
+}
+#phantrencung-trai ul li{
+float:left;
+margin-right:10px;
+}
+#phantrencung-phai {
+float:right;
+color:#ffffff;
+margin-right:10px;
+
+}
+#phantrencung-phai .dangnhap{
+position:relative; 
+top:6px;	
+}
+#phantrencung-phai .dangkithanhvien{
+float:right;
+margin-top:10px;
+} /* Phan tren cung*/
+#phandau{
+width:1100px;
+height:140px;
+/* background-image:url(anh/hinh00.png);xí n?a ch?nh s?a l?i background-image them mau cho no*/
+background-color:#CCCCCC;
+margin:auto;
+
+}
+#phandau #logo{
+width:250px;
+height:140px;
+float:left;
+margin-left:70px;
+
+
+}
+#phandau #dongchunho{
+height:38px;
+width:600px;
+float:right;
+
+
+}
+#phandau #dongchunho ul li{
+list-style-type:none;
+float:left;
+width:140px;
+font-size:16px;
+margin-top:15px;
+
+}
+#phandau #dongchunho ul li a{
+color:#000000;
+text-decoration:none;
+}
+#phandau #dongchunho ul li a:hover{
+color:#FF6600;
+text-decoration:underline;
+}
+#phandau #timkiem{
+width:600px;
+height:100px;
+float:right;
+
+}
+#phandau #timkiem form{
+margin:50px 0px 0px 200px;
+}
+#phandau #timkiem .timkiem1{
+width:270px;
+
+}
+#phandau #timkiem .timkiem2{
+float:right;
+position:relative;
+bottom:3px;
+right:10px;
+}/* Phan dau */
+#phantieude{
+width:1100px;
+height:40px;
+margin:5px auto;
+background-color:ccc;
+
+}
+
+#phantieude ul li{
+font-size:20px;
+float:left;
+list-style-type:none;
+border-right: 1px solid #999999;
+position:relative; /* co d?nh mà chúng ta hover*/
+}
+#phantieude ul li a{
+text-decoration:none;
+padding:10px 25px 10px 10px;
+line-height:40px;
+color:#ffffff;
+
+
+}
+
+#phantieude ul li a:hover{
+background-color:#000000;
+color:#FF3333;
+}
+#phantieude #dacap{
+display:none; /* an menu con*/
+position:absolute; 
+z-index:90; /* menu con n?i lên trên li c? d?nh */
+background:#000000;
+}
+#phantieude #dacap li{
+width:250px;
+}
+#phantieude li:hover #dacap{
+display:block; /* hi?n menu con khi hover*/
+}/* Phan tieu de*/
+#phanthan{
+width:1000px;
+height:3470px;  /* sua khi lam phan chan*/
+margin:20px auto;
+
+
+clear:both;
+
+}
+#phanthantren{
+width:1000px;
+height:600px;
+
+}
+#phanthan #phanthantren #slider{
+width:1000px;
+height:600px;
+border:1px #663366 solid;
+float:left;
+}
+#phanthan #phanthantren #quangcaoanh{
+width:230px;
+height:2850px;
+float:right;
+margin-top:20px;
+clear:both;
+
+
+}
+#phanthan #baivietnoibat{
+width:750px;
+height:250px;
+
+margin:20px auto;
+float:left;
+background-color:#CCCCCC;
+}
+#phanthan #baivietnoibat .khung{
+height:35px;
+width:740px;
+float:right;
+background-color:#666666;
+}
+#phanthan #baivietnoibat .khung a:hover{
+color:#6600FF;
+background-color:#000000;
+}
+#phanthan #baivietnoibat .khung a{
+text-decoration:none;
+font-size:25px;
+background:#CC0000;
+line-height:34px;
+display:inline-block;
+}
+#phanthan #baivietnoibat .noidung{
+height:200px;
+width:740px;
+float:right;
+position:relative;
+top:13px;
+
+background-color:#FFFFFF;
+
+}
+#phanthan #baivietnoibat .noidung ul{
+padding:0px;
+}
+
+#phanthan #baivietnoibat .noidung ul li{
+list-style-type:none;
+float:left;
+margin-right:5px;
+}
+#phanthan #baivietmoi{
+width:750px;
+height:2533px;/* thay doi khi thay doi no dung web*/
+
+float:left;
+margin:20px auto;
+background-color:#CCCCCC;
+}
+#phanthan #baivietmoi .khungbaivietmoi{
+height:35px;
+width:740px;
+
+float:right;
+background-color:#666666;
+}
+#phanthan #baivietmoi .khungbaivietmoi a{
+text-decoration:none;
+font-size:25px;
+background:#CC0000;
+line-height:35px;
+display:inline-block;
+}
+#phanthan #baivietmoi .khungbaivietmoi a:hover{
+color:#6600FF;
+background-color:#000000;
+}
+#phanthan #baivietmoi .noidungbaivietmoi{
+width:740px;
+height:2465px; /* thay doi khi thay doi no dung web*/
+background-color:#FFFFFF;
+
+clear:both;
+float:right;
+margin-top:30px;
+}
+#phanthan #baivietmoi .noidungbaivietmoi #noidungchinh .noidungchinh1{
+border:1px #CCCCCC solid;
+width:740px;
+height:220px;
+margin-top:20px;
+
+}
+#phanthan #baivietmoi .noidungbaivietmoi #noidungchinh .noidungchinh1 img{
+float:left;
+height:190px;
+width:170px;
+margin-right:20px;
+}
+#phanthan #baivietmoi .noidungbaivietmoi #noidungchinh .noidungchinh1  p a{
+font-size:25px;
+text-decoration:none;
+color:#000000;
+font-weight: bold;
+}
+#phanthan #baivietmoi .noidungbaivietmoi #noidungchinh .noidungchinh1  p a:hover{
+color:#CC0000;
+text-decoration:underline;
+
+
+
+}
+#phanthan #baivietmoi .noidungbaivietmoi #noidungchinh .noidungchinh1  pre a{
+font-size:12px;
+color:#999999;
+text-decoration:none;
+}
+#phanthan #baivietmoi .noidungbaivietmoi #noidungchinh .noidungchinh1  pre a:hover{
+color:#CC00CC;
+}
+#phanthan #baivietmoi .noidungbaivietmoi #noidungchinh .noidungchinh1  span{
+font-size:16px;
+
+}
+#phanthan #baivietmoi .noidungbaivietmoi #noidungchinh #chuyentrang{
+height:50px;
+width:740px;
+background-color:#999999;
+text-align:center;
+margin-top:20px;
+
+}
+#phanthan #baivietmoi .noidungbaivietmoi #noidungchinh #chuyentrang .thutuchuyentrang { 
+
+}
+#phanthan #baivietmoi .noidungbaivietmoi #noidungchinh #chuyentrang .thutuchuyentrang .thutu1{
+
+color:#CC6633;
+background:#000000;
+margin-top:15px; /* vi tri cua chuyen trang */
+border-width:0px;
+border-style:solid;
+
+
+}
+#phanthan #baivietmoi .noidungbaivietmoi #noidungchinh #chuyentrang .thutuchuyentrang .thutu2{
+color:#FFFFFF;
+background:#000000;
+border-width:0px;
+border-style:solid;
+}
+#phanthan #baivietmoi .noidungbaivietmoi #noidungchinh #chuyentrang .thutuchuyentrang .thutu3{
+color:#FFFFFF;
+background:#000000;
+border-width:0px;
+border-style:solid;
+}
+#phanthan #baivietmoi .noidungbaivietmoi #noidungchinh #chuyentrang .thutuchuyentrang .thutu4{
+color:#FFFFFF;
+background:#000000;
+border-width:0px;
+border-style:solid;
+}
+#phanchan{
+
+height:300px;
+width:1100px;
+
+clear:both;
+position:relative;
+right:50px;
+background-color:#999999;
+}
+#phanchan #phanchantren{
+height:200px;
+width:1100px;
+
+background-color:#CCCCCC;
+}
+#phanchan #phanchantren .logo2{
+float:left;
+
+margin:30px;
+
+}
+#phanchan #phanchantren .gioithieuthongtin{ 
+
+width:750px;
+height:200px;
+float:right;
+}
+
+#phanchan #phanchantren .gioithieuthongtin p{
+font-size:25px;
+text-align:center;
+text-decoration:none;
+
+
+
+}
+#phanchan #phanchantren .gioithieuthongtin a{
+text-decoration:none;
+color:#000000;
+margin-left:15px;
+font-size:15px;
+
+
+}
+#phanchan #phanchantren .gioithieuthongtin a:hover{
+color:#FF0000;
+text-decoration:underline;
+
+
+}
+#phanchan #phanchantren .gioithieuthongtin .gioithieuthongtin1{
+margin-left:50px;
+}
+#phanchanduoi{
+
+height:35px;
+width:900px;
+margin-top: 40px;
+margin-left: 70px;
+
+}
+#phanchan #phanchanduoi .phanchanduoi1{
+font-size:20px;
+color:#CCCCCC;
+margin-left:10px;
+}
+#phanchan #phanchanduoi .phanchanduoi2 a{
+margin-left:10px;
+color:#000000;
+text-decoration:none;
+font-size:20px;
+}
+#phanchan #phanchanduoi .phanchanduoi2 a:hover{
+color:#3300FF;
+text-decoration:underline;
+}
